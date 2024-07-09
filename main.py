@@ -2,10 +2,11 @@ import sys
 import numpy as np
 from PyQt5.QtWidgets import QApplication, QMainWindow, QAction, QFileDialog, QVBoxLayout, QWidget, QPushButton, QMessageBox
 from PyQt5.QtOpenGL import QGLWidget
+from PyQt5.core import Qt
 from OpenGL.GL import *
 from OpenGL.GLU import *
 import bpy
-import vrm2py
+
 
 class Mesh:
     def __init__(self, vertices, faces):
